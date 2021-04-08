@@ -4,3 +4,4 @@
 // const P=()=><p>Hello</p>
 // ReactDOM.render(<P/>, document.getElementById('root'))
 console.log('ffchcy')
+console.log('ffchcy')
