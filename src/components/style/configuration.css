@@ -1,0 +1,124 @@
+.wrapperConfig{
+  width: 90%;
+  display: flex;
+  flex-direction: column;
+}
+main{
+  padding-top: 10px;
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+}
+h1, h2{
+  color: rgb(73, 71, 71);
+}
+.formSelect{
+  display: flex;
+  width: 50%;
+  flex-direction: column;
+  align-items: center;
+  border-radius: 5px;
+  padding: 0px 30px;
+}
+
+.btnSelect{
+  border-radius: 8px;
+  background-color:#fa9179;
+  border: 0;
+  width: 120px;
+  color: white;
+  font-size: 18px;
+  padding: 5px 0px;
+  text-align: center;
+}
+.blockPurpose{
+  display: flex;
+  height: 100px;
+  border-radius: 5px;
+  padding-bottom: 10px;
+  padding-top: 10px;
+  border-bottom: 5px solid #fa9179;
+  border-top: 5px solid #fa9179;
+  width: 80%;
+  justify-content: center;
+}
+.blockGame, .blockWork, .blockMedia{
+  flex-basis: 30%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+.blockGame>div, .blockWork>div, .blockMedia>div{
+  text-align: center;
+  margin-top: 5px;
+}
+.blockGame>svg:hover,.blockWork>svg:hover,.blockMedia>svg:hover{
+  fill:#f5c2b6;
+  cursor: pointer;
+}
+h2{
+  margin: 10px 0;
+}
+.blockPrice, .blockProducer, .blockMemory{
+  display: flex;
+  height: 80px;
+  border-radius: 5px;
+  padding-bottom: 10px;
+  padding-top: 10px;
+  border-bottom: 5px solid #fa9179;
+  border-top: 5px solid #fa9179;
+  width: 80%;
+  justify-content:center;
+  align-items: center;
+}
+.blockPrice>input, select{
+  margin: 0;
+  border-radius: 5px;
+  height: 30px;
+  border: 3px solid rgb(153, 152, 152);
+  margin:  0px 10px;
+}
+.blockProducer{
+  justify-content:space-evenly;
+  padding:0;
+  height: 100px;
+}
+.blockProducer>div{
+  height: 100%;
+  display: flex;
+  align-items: center;
+}
+.blockProducer>div:hover{
+  background-color:#f7bfb2;
+  border: 3px solid #fa9179;
+  cursor: pointer;
+}
+
+.blockProducer>div>img{
+  width: 100px;
+}
+.blockNotInt>img{
+  width: 70px;
+  height: 70px;
+}
+
+.blockMemory{
+  margin-bottom: 30px;
+  display: flex;
+  justify-content: start;
+}
+.blockSsd, .blockHdd{
+  flex-basis: 50%;
+  display: flex;
+  align-items: center;
+}
+.blockSsd>img{
+  width: 60px;
+}
+.blockHdd>img{
+  width: 80px;
+}
+select{
+  width: 130px;
+  text-align: center;
+}

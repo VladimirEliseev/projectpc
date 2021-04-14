@@ -1,7 +1,7 @@
-// import React from 'react'
-// import ReactDOM from 'react-dom'
-// import './main.css'
-// const P=()=><p>Hello</p>
-// ReactDOM.render(<P/>, document.getElementById('root'))
-console.log('ffchcy')
-console.log('ffchcy')
+import React from 'react'
+import ReactDOM from 'react-dom'
+import './main.css'
+import Header from './components/header'
+import Сonfiguration from './components/configurator'
+
+ReactDOM.render(<Сonfiguration/>, document.getElementById('root'));

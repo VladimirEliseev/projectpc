@@ -1,0 +1,129 @@
+body{
+  background-color: #e9e3e3;
+  margin: 0;
+  padding: 0;
+  display: flex;
+  justify-content: center;
+  font-family:'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif
+}
+#root{
+  display: flex;
+  justify-content: center;
+  width: 100%;
+}
+.header{
+  flex-basis: 100%;
+  height: 100px;
+  display: flex;
+  justify-content: center;
+}
+.blockTitleHeader{
+  flex-basis: 30%;
+  align-self: center;
+  display: flex;
+  justify-content: flex-end;
+
+}
+.titleHeader{
+  color: #fa9179;
+  font-weight: 800;
+  border: 3px solid rgb(73, 71, 71);
+  padding: 5px 30px;
+  cursor: pointer;
+  text-align: center;
+  font-size: 26px;
+}
+.titleHeader>span{
+  color: rgb(73, 71, 71);
+}
+.blockMenuHeader{
+  flex-basis: 70%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+.menuHeaderAuthReg{
+  flex-basis: 50%;
+  width: 70%;
+  display: flex;
+  justify-content: flex-end;
+  padding-top: 10px;
+  padding-bottom: 20px;
+}
+
+.menuHeaderMain{
+  flex-basis: 50%;
+  width: 70%;
+  display: flex;
+  align-items: flex-end;
+  justify-content:space-evenly;
+  border-bottom: 3px solid rgb(136, 136, 136);
+}
+.menuHeaderMain>div{
+  width: 25%;
+  box-shadow: 0 3px 0 0 #fa9179;
+  padding-bottom: 5px;
+  text-align: center;
+}
+.menuHeaderAuthReg>button:nth-child(1){
+  margin-right: 20px;
+}
+.menuHeaderAuthReg>button{
+  border-radius: 8px;
+  background-color:#fa9179;
+  border: 0;
+  width: 120px;
+  color: white;
+  font-size: 16px;
+}
+.menuHeaderAuthReg>button:hover{
+  cursor: pointer;
+  color: black;
+}
+.menuHeaderMain>div:hover{
+  box-shadow: 0 6px 0 0 #fa9179;
+  cursor: pointer;
+}
+.wrapperConfig{
+  width: 90%;
+  display: flex;
+  flex-direction: column;
+}
+main{
+  padding-top: 30px;
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+}
+h1, h2{
+  color: rgb(73, 71, 71);
+}
+.formSelect{
+  display: flex;
+  width: 50%;
+  flex-direction: column;
+  align-items: center;
+  border:3px solid #fa9179;
+  border-radius: 5px;
+  padding: 0px 30px;
+}
+input{
+  border-radius: 5px;
+  height: 25px;
+  margin-bottom: 30px;
+  border: 1px solid rgb(73, 71, 71);;
+}
+.btnSelect{
+  border-radius: 8px;
+  background-color:#fa9179;
+  border: 0;
+  width: 120px;
+  color: white;
+  font-size: 18px;
+  padding: 5px 0px;
+  text-align: center;
+}
+.blockPurpose{
+  display: flex;
+
+}

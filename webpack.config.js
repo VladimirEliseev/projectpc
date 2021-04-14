@@ -3,30 +3,14 @@ const path = require('path')
 const htmlPlugin=require('html-webpack-plugin')
 const miniCss=require('mini-css-extract-plugin')
 // const { CleanWebpackPlugin } = require('clean-webpack-plugin');
-const babelOptions = preset => {
-  const opts = {
-    presets: [
-      '@babel/preset-env',
-    ]
-  }
 
-  if (preset) {
-    opts.presets.push(preset)
-  }
-  return opts
-}
 module.exports={
   mode: "development",
-  target: 'node', 
-  externals: {
-    react: 'react',
-  }
- , 
   module:{
     rules:[
       {
         test: /\.js$/, 
-        // exclude: /node_modules/, 
+        exclude: /node_modules/, 
         use: [{
           loader: 'babel-loader'
         }
@@ -37,7 +21,7 @@ module.exports={
         use:[miniCss.loader,'css-loader']
       },
       {
-        test: /\.(png|jpg|gif|ico)$/,
+        test: /\.(png|jpg|svg|ico)$/,
         use:[{loader: 'file-loader',
         options:{
           outputPath: 'images',

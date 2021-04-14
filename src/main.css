@@ -1,3 +1,14 @@
+body{
+  background-color: #e9e3e3;
+  margin: 0;
+  padding: 0;
+  display: flex;
+  justify-content: center;
+  color: rgb(73, 71, 71);
+  font-family:'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif
+}
 #root{
-  color: black
+  display: flex;
+  justify-content: center;
+  width: 100%;
 }
