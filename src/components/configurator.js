@@ -1,7 +1,7 @@
 import React, {useState, useEffect} from 'react'
 import ReactDOM from 'react-dom'
 import Header from './header'
-import './style/configuration.css'
+import './style/configurator.css'
 import IconGame from './iconGame'
 import IconWork from './iconWork'
 import IconMedia from './iconMedia'
@@ -12,38 +12,31 @@ import iconNotInt from './resources/iconNotIntrecting.svg'
 import iconSsd from './resources/iconSsd.svg'
 import iconHdd from './resources/iconHdd.svg'
 
-const Configuration=()=>{
-  const [purpose, setPurpose]=useState({choice:'Игры',colorsPurpose:['#fa9179', 'black', 'black']})
-  const {colorsPurpose}=purpose
-  const [producer, setProducer]=useState({choice:'Нет',colorsProducer:['#e9e3e3', '#e9e3e3', '#e9e3e3','#f7bfb2']})
-  const {colorsProducer}=producer
+const Configuration=(props)=>{
+  const [purpose, setPurpose]=useState('Игры')
+  const [producer, setProducer]=useState('Нет')
   const [price, setPrice]=useState({minPrice:0,maxPrice:1000000})
-  const {minPrice, maxPrice}=price;
   const [volumeMemory, setVolumeMemory]=useState({volumeHdd:'1тб',volumeSsd:'256гб'})
-  const {volumeHdd, volumeSsd}=volumeMemory;
-  // changeMinPrice=(event)=>{
-  //   ()=>{this.setPrice({minPrice:event.value, ...price})}
-    
-  // }
+  const {setItemsMenu, bgc}=props;
   return(
-    <div className='wrapperConfig'>
-      <Header/>
+    <div>
+      <Header bgc={bgc} setItemsMenu={(e)=>{setItemsMenu(e.target.id)}}/>
       <main>
         <h1>Конфигуратор подбора</h1>
         <div className='formSelect'>
           <h2>Назначение</h2>
           <div className='blockPurpose'>
             <div className='blockGame'>
-              <IconGame fill={colorsPurpose[0]} setColor={()=>setPurpose({choice:'Игры',colorsPurpose:['#fa9179', 'black', 'black']})}/>   
-              <div style={{color:colorsPurpose[0]}}>Игры</div>
+              <IconGame fill={purpose==='Игры'?'#fa9179':'black'} setColor={()=>setPurpose('Игры')}/>   
+              <div style={{color:purpose==='Игры'?'#fa9179':'black'}}>Игры</div>
             </div>
             <div className='blockWork'>
-              <IconWork fill={colorsPurpose[1]} setColor={()=>setPurpose({choice:'Игры',colorsPurpose:['black', '#fa9179', 'black']})}/>
-              <div style={{color:colorsPurpose[1]}}>Работа</div>
+              <IconWork fill={purpose==='Работа'?'#fa9179':'black'} setColor={()=>setPurpose('Работа')}/>
+              <div style={{color:purpose==='Работа'?'#fa9179':'black'}}>Работа</div>
             </div>
             <div className='blockMedia'>
-              <IconMedia fill={colorsPurpose[2]} setColor={()=>setPurpose({choice:'Игры',colorsPurpose:['black', 'black', '#fa9179']})}/>
-              <div style={{color:colorsPurpose[2]}}>Мультимедиа</div>
+              <IconMedia fill={purpose==='Мультимедиа'?'#fa9179':'black'} setColor={()=>setPurpose('Мультимедиа')}/>
+              <div style={{color:purpose==='Мультимедиа'?'#fa9179':'black'}}>Мультимедиа</div>
             </div>
           </div>
           <h2>Цена (руб.)</h2>
@@ -55,20 +48,20 @@ const Configuration=()=>{
           </div>
           <h2>Производитель</h2>
           <div className='blockProducer'>
-            <div id='blockAmd' className='blockAmd' style={{backgroundColor:colorsProducer[0]}}
-            onClick={()=>setProducer({choice:'Амд',colorsProducer:['#f7bfb2', '#e9e3e3', '#e9e3e3','#e9e3e3']})}>
+            <div id='blockAmd' className='blockAmd' style={{backgroundColor:producer==='Amd'?'#f7bfb2':'#e9e3e3'}}
+            onClick={()=>setProducer('Amd')}>
               <img src={iconAmd} alt="иконка амд"/>
             </div>
-            <div id='blockIntel' className='blockIntel' style={{backgroundColor:colorsProducer[1]}}
-            onClick={()=>setProducer({choice:' Интел',colorsProducer:['#e9e3e3', '#f7bfb2', '#e9e3e3','#e9e3e3']})}>
+            <div id='blockIntel' className='blockIntel' style={{backgroundColor:producer==='Intel'?'#f7bfb2':'#e9e3e3'}}
+            onClick={()=>setProducer('Intel')}>
               <img src={iconIntel} alt="иконка интел"/>
             </div>
-            <div id='blockNvidia' className='blockNvidia' style={{backgroundColor:colorsProducer[2]}}
-            onClick={()=>setProducer({choice:'Нвидиа',colorsProducer:['#e9e3e3', '#e9e3e3', '#f7bfb2','#e9e3e3']})}>
+            <div id='blockNvidia' className='blockNvidia' style={{backgroundColor:producer==='Nvidia'?'#f7bfb2':'#e9e3e3'}}
+            onClick={()=>setProducer('Nvidia')}>
               <img src={iconNvidia} alt="иконка нвидиа"/>
             </div>  
-            <div id='blockNotInt' className='blockNotInt' style={{backgroundColor:colorsProducer[3]}}
-            onClick={()=>setProducer({choice:'Нет',colorsProducer:['#e9e3e3', '#e9e3e3', '#e9e3e3','#f7bfb2']})}>
+            <div id='blockNotInt' className='blockNotInt' style={{backgroundColor:producer==='Нет'?'#f7bfb2':'#e9e3e3'}}
+            onClick={()=>setProducer('Нет')}>
               <img src={iconNotInt} alt="не имеет значения"/>
             </div>  
           </div>

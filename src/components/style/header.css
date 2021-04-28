@@ -53,11 +53,12 @@
   justify-content:space-evenly;
   border-bottom: 3px solid rgb(136, 136, 136);
 }
-.menuHeaderMain>div{
+.menuHeaderMain>a{
   width: 25%;
   box-shadow: 0 3px 0 0 #fa9179;
   padding-bottom: 5px;
   text-align: center;
+  text-decoration: none;
 }
 .menuHeaderAuthReg>button:nth-child(1){
   margin-right: 20px;
@@ -74,7 +75,11 @@
   cursor: pointer;
   color: black;
 }
-.menuHeaderMain>div:hover{
+.menuHeaderMain>a:hover{
   box-shadow: 0 6px 0 0 #fa9179;
   cursor: pointer;
 }
+/* .menuHeaderMain>div:nth-child(1){
+  background-color: #fa9179;
+  color: white;
+} */

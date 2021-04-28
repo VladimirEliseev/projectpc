@@ -35,8 +35,17 @@ module.exports={
     new miniCss({filename: 'main-[hash:8].css'})
     // new CleanWebpackPlugin(),
   ],
-  devServer:{
-    open:true
-  }
+  devServer: {
+    host: 'localhost',
+    port: 8880,
+    open: true,
+    historyApiFallback: true,
+    proxy: {
+      '/api': {
+        target: 'http://localhost:8881',
+        secure: false
+      }
+    }
+  },
   
 }
