@@ -1,0 +1,101 @@
+.addAccessoryForm{
+  flex-basis: 40%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.addAccessoryForm>div{
+  display: flex;
+  justify-content:space-between;
+  margin-bottom: 30px;
+  width: 80%;
+}
+label{
+  width: 200px;
+}
+input{
+  margin: 0;
+  border-radius: 5px;
+  height: 30px;
+  border: 3px solid rgb(153, 152, 152);
+  margin:  0px 10px;
+  outline: none;
+}
+input:focus{
+  border: 3px solid #fa9179;
+}
+.wrapperAddAndChangeForm{
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+.wrapperAddAndChangeForm>div{
+  display: flex;
+  justify-content:space-between;
+  margin-bottom: 30px;
+  width: 100%;
+}
+.blockProducerAndModel{
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  margin-bottom: 0;
+}
+.blockProducerAndModel>div{
+  display: flex;
+  justify-content:space-between;
+  margin-bottom: 30px;
+  width: 100%;
+}
+#firstSpec{
+  margin: 0
+}
+.blockShopLinkAndPrice{
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+.blockShopLinkAndPrice>div{
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+.blockShopLinkAndPrice>div>div{
+  width: 100%;
+  display: flex;
+  justify-content: space-between;
+  margin-bottom: 30px;
+}
+.blockShopLinkAndPriceAdd{
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+.blockShopLinkAndPriceAdd>div{
+  width: 100%;
+  display: flex;
+  justify-content: space-between;
+  margin-bottom: 30px;
+}
+
+@media screen and (max-width:767px){
+  .addAccessoryForm{
+    width: 100%;
+    display: flex;
+  }
+}
+@media screen and (max-width:991px) and  (min-width:768px){
+  .addAccessoryForm{
+    width: 100%;
+    display: flex;
+  }
+}
+@media screen and (max-width:1100px)  and  (min-width:992px){
+  .addAccessoryForm{
+    width: 100%;
+    display: flex;
+    justify-content: center;
+  }
+}

@@ -1,0 +1,265 @@
+.mainAccessory{
+  display: flex;
+  flex-direction: row;
+  align-items: flex-start;
+}
+.blockAccessory:nth-child(1){
+  margin-top: 20px;
+}
+.blockAccessory{
+  display: flex;
+  border-bottom: 5px solid #fa9179;
+  width: 70%;
+  padding: 20px 30px;
+  cursor: pointer;
+  justify-content: space-between;
+  border-radius: 5px;
+  background-color: #e2dada;
+}
+.catalogAccessoryMobile{
+  display: none;
+}
+.blockAccessory:hover{
+  box-shadow: 0 0 10px rgba(0,0,0,0.5);
+}
+.blockInfoAccessory{
+  margin-left: 20px;
+  justify-items: start;
+  flex-basis: 50%;
+}
+a{
+  text-decoration: none;
+  color: black;
+}
+.catalogAccessory{
+  flex-basis: 30%;
+  list-style-type: none;
+  padding: 0;
+  margin: 0;
+  margin-top: 20px;
+}
+.catalogAccessory>li{
+  cursor: pointer;
+  width: 60%;
+  margin-bottom: 20px;
+  font-size: 18px;
+  border-bottom: 3px solid #fa9179;
+}
+.catalogAccessory>li:hover{
+  background-color: #fa9179;
+  color: white;
+}
+.blockImageAccessory{
+  flex-basis: 20%;
+}
+.blockAccessories{
+  flex-basis: 70%;
+}
+.blockPriceAndEdit{
+  flex-basis: 30%;
+  justify-self: end;
+  font-size: 20px;
+  font-weight: 700;
+  display: flex;
+  flex-direction: column;
+}
+.titleNameAccessory{
+  margin-top: 0;
+}
+.nameAccessory>div{
+  margin-bottom: 5px;
+}
+
+.btnAddAccessory{
+  margin-left: 45%;
+  background-color: #fa9179;
+  color: white;
+  border: 0;
+  margin-top: 40px;
+  border-radius: 8px;
+  width: 120px;
+  height: 30px;
+  font-size: 16px;
+  cursor: pointer;
+}
+.btnAddAccessory:hover{
+  color: black
+}
+.logoEdit{
+  margin-right: 10px;
+  border-radius: 8px;
+}
+.logoDelete{
+  border-radius: 8px;
+}
+.logoEdit:hover, .logoDelete:hover{
+  background-color: #fa9179;
+}
+
+.tittlePrice>a{
+  text-decoration: underline;
+  color: rgb(68, 68, 247);
+}
+.blockChange{
+  text-align: right;
+
+}
+.tittlePrice>a:hover{
+  color: red
+}
+.tittlePrice{
+  display: flex;
+  justify-content: space-between;
+}
+
+.blockSearch{
+  width: 400px;
+}
+.btnSearch{
+  background-color: #fa9179;
+  color: white;
+  border: 0;
+  width: 100px;
+  height: 30px;
+  border-radius: 5px;
+  font-size: 16px;
+  cursor: pointer;
+
+}
+#inputSearch{
+  margin-right: 0;
+}
+
+@media screen and (max-width:767px){
+  .catalogAccessory{
+    display: none;
+  }
+  .blockSearchAndAdd{
+    display: flex;
+  }
+  .btnAddAccessory{
+    margin-left: 35%;
+    margin-bottom: 20px;
+  }
+  .blockSearch{
+    width: 300px;
+    margin-left: 10%;
+  }
+  .blockAccessories{
+    flex-basis: 100%;
+  }
+  .blockAccessory{
+    display: flex;
+    flex-direction: column;
+    border-bottom: 5px solid #fa9179;
+    width: 90%;
+    padding: 20px 30px;
+    cursor: pointer;
+    justify-content: space-between;
+    border-radius: 5px;
+    background-color: #e2dada;
+  }
+  .mainAccessory{
+    flex-direction: column;
+  }
+  .catalogAccessoryMobile{
+    display: flex;
+    justify-content: space-between;
+    width: 100%;
+  }
+  
+}
+@media screen and (max-width:991px) and  (min-width:768px){
+  .catalogAccessory{
+    display: none;
+  }
+  .blockSearchAndAdd{
+    display: flex;
+  }
+  .btnAddAccessory{
+    margin-left: 30%;
+    margin-bottom: 20px;
+  }
+  .blockSearch{
+    width: 300px;
+    margin-left: 15%;
+  }
+  .blockAccessories{
+    flex-basis: 100%;
+  }
+  .blockAccessory{
+    display: flex;
+    flex-direction: row;
+    border-bottom: 5px solid #fa9179;
+    width: 100%;
+    padding: 0px 0px;
+    cursor: pointer;
+    justify-content: space-between;
+    border-radius: 5px;
+    background-color: #e2dada;
+  }
+  .blockImageAccessory{
+    flex-basis: 20%;
+  }
+  .blockInfoAccessory{
+    flex-basis: 40%;
+  }
+  .blockPriceAndEdit{
+    flex-basis: 30%;
+  }
+  .catalogAccessoryMobile{
+    display: flex;
+    justify-content: space-between;
+    width: 100%;
+  }
+  .mainAccessory{
+    flex-direction: column;
+  }
+}
+@media screen and (max-width:1100px)  and  (min-width:992px){
+  .catalogAccessory{
+    display: none;
+  }
+  .blockSearchAndAdd{
+    display: flex;
+  }
+  .btnAddAccessory{
+    margin-left: 30%;
+    margin-bottom: 20px;
+  }
+  .blockSearch{
+    width: 300px;
+    margin-left: 15%;
+  }
+  .blockAccessories{
+    flex-basis: 100%;
+  }
+  .blockAccessory{
+    display: flex;
+    flex-direction: row;
+    border-bottom: 5px solid #fa9179;
+    width: 95%;
+    padding: 0px 0px;
+    cursor: pointer;
+    justify-content: space-between;
+    border-radius: 5px;
+    background-color: #e2dada;
+  }
+  .blockImageAccessory{
+    flex-basis: 20%;
+  }
+  .blockInfoAccessory{
+    flex-basis: 40%;
+  }
+  .blockPriceAndEdit{
+    flex-basis: 30%;
+  }
+  .catalogAccessoryMobile{
+    display: flex;
+    justify-content: space-evenly;
+    width: 100%;
+  }
+  .mainAccessory{
+    flex-direction: column;
+  }
+}

@@ -1,0 +1,108 @@
+.imgAcessoryConfig{
+  width: 70px;
+}
+.componentConfiguration{
+  display: flex;
+  flex-direction: column;
+}
+.config{
+  margin-top: 50px;
+  display: flex;
+  flex-direction: column;
+  width: 50%;
+  align-self: center;
+}
+.configAccess{
+  display: flex;
+  margin-bottom: 20px;
+  height: 100px;
+  border-bottom: 5px solid #fa9179;
+}
+.configAccess:nth-child(2){
+  padding-top: 10px;
+  border-top: 5px solid #fa9179;
+}
+.blockAccessInfo{
+  display: flex;
+  flex-basis: 80%;
+  justify-content: space-between;
+}
+.linkShop{
+  color: blue;
+  text-decoration: underline;
+}
+
+.accessInfoPrice{
+  display: flex;
+  justify-content: space-between;
+  flex-basis: 25%;
+}
+.totalPrice{
+  text-align: right;
+  color: red;
+  font-size: 24px;
+  font-weight: 800;
+  margin-bottom: 50px;
+}
+.totalPrice>span{
+  color: black
+}
+.paramsConfig{
+  display: flex;
+  justify-content: space-between;
+  flex-wrap: wrap;
+  font-size: 20px;
+  margin-bottom: 30px;
+}
+.paramsConfig>h2{
+  flex-basis: 100%;
+  text-align: center;
+}
+.accessInfoName>span{
+  margin-left: 20px;
+  font-size: 20px;
+  font-weight: 700;
+}
+.wrapperbtnSaveConfig{
+  display: flex;
+  justify-content: center;
+}
+.btnSaveConfig{
+  border-radius: 8px;
+  background-color:#fa9179;
+  border: 0;
+  width: 120px;
+  color: white;
+  font-size: 18px;
+  padding: 5px 0px;
+}
+
+@media screen and (max-width:767px){
+  .config{
+    width: 85%;
+  }
+  .accessInfoName{
+    margin-right: 20px;
+  }
+}
+@media screen and (max-width:991px) and  (min-width:768px){
+  .config{
+    width: 75%;
+    position: relative;
+    left: -80px;
+  }
+  .accessInfoName{
+    margin-right: 20px;
+  }
+}
+@media screen and (max-width:1100px)  and  (min-width:992px){
+  .config{
+    width: 65%;
+    position: relative;
+    left: -150px;
+  }
+  .accessInfoName{
+    margin-right: 20px;
+  }
+}
+
