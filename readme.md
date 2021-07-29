@@ -16,4 +16,4 @@
 Также цены обновляются в автоматическом режиме, путем периодического парсинга обновлений цен с данных магазинов.  
                 <p align="center">![image](https://user-images.githubusercontent.com/33568155/127500091-801fb922-40b4-431b-86e5-9c022c582289.png)</p>  
 Приложение также позволяет хранить подобранные сборки в аккаунте пользователя.  
-   <p align="center">![image](https://user-images.githubusercontent.com/33568155/127500091-801fb922-40b4-431b-86e5-9c022c582289.png)</p>    
+   <p align="center">![image](https://user-images.githubusercontent.com/33568155/127501157-2041fc72-83d3-47c3-9997-be3a5f415418.png)</p>  
