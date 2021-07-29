@@ -14,6 +14,6 @@
                  <p align="center">![image](https://user-images.githubusercontent.com/33568155/127499639-b5d727b5-6c08-4629-a039-64ccb18a3107.png)</p>  
 Для каждого из комплектующих система выбирает магазин с самой выгодной ценой из трех возможных магазинов (DNS, Nix и Niceprice).  
 Также цены обновляются в автоматическом режиме, путем периодического парсинга обновлений цен с данных магазинов.  
-                ![image](https://user-images.githubusercontent.com/33568155/127500091-801fb922-40b4-431b-86e5-9c022c582289.png)
+                <p align="center">![image](https://user-images.githubusercontent.com/33568155/127500091-801fb922-40b4-431b-86e5-9c022c582289.png)</p>  
 
 
