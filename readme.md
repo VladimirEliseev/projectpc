@@ -20,12 +20,12 @@
 Сайт имеет адаптивный интерфейс, позволяющий просматривать страницу с мобильных устройств  
 <p align="center">![image](https://user-images.githubusercontent.com/33568155/127502493-4fe9eea4-93cb-4222-ac00-f2a299f7bd7b.png)</p>  
 Система рзрабатывалась с помощью следующих технологий  
-Frontend:
+Frontend:  
 * HTML
 * CSS
 * Javascript
 * React
-Backend:
+Backend:  
 * Node. js
 * MySQL
 * Express
