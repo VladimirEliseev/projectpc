@@ -25,6 +25,7 @@ Frontend:
 * CSS;
 * Javascript;
 * React.    
+
 Backend:  
 * Node. js;
 * MySQL;
