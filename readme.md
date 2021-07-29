@@ -18,8 +18,8 @@
 Приложение также позволяет хранить подобранные сборки в аккаунте пользователя.  
                 <p align="center">![image](https://user-images.githubusercontent.com/33568155/127501157-2041fc72-83d3-47c3-9997-be3a5f415418.png)</p>  
 Сайт имеет адаптивный интерфейс, позволяющий просматривать страницу с мобильных устройств  
-<p align="center">![image](https://user-images.githubusercontent.com/33568155/127502493-4fe9eea4-93cb-4222-ac00-f2a299f7bd7b.png)</p>  
-Система рзрабатывалась с помощью следующих технологий  
+           ![image](https://user-images.githubusercontent.com/33568155/127502493-4fe9eea4-93cb-4222-ac00-f2a299f7bd7b.png)  
+Система рзрабатывалась с помощью следующих технологий.    
 Frontend:  
 * HTML
 * CSS
